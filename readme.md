@@ -13,7 +13,18 @@ y el valor es lo que va hacer que se modifique
 3. Explicar los 4 conceptos importantes con ejemplos ( selectores, herencia , cascada , especificidad
 
 los selectores son patrones y se usan para saber donde se aplicaran los estilos como <h1>,<h2>,<p>,etc
+h1 {
+    color: blue;
+}
 Las herencias hacen que se ejecuten estilos a todos los elementos dentro de ellas ya que el es el estilo principal.
+body{
+    color red
+}
+
+h1 {
+    color: blue;
+}
+(y si h1 esta dentro de body el color que prevalecera sera el red ya que body es el todo)
 
 la cascada es cuando cada selector se le pone un valor diferente y siempre el ultimo es el que se ejecuta.
 
@@ -25,3 +36,14 @@ h1{
 }
 
 la especificidad es el nivel de importancia y peso que tiene cada selector y eso impondra cual es el que reconocera como principal el css existen las etiquetas,clases,id,inline e !important
+
+p {
+    color: blue;
+    
+}
+
+p.clase {
+    color: red;
+}
+
+el color que prevalecera sera red ya que clase vale mas que el etiqueta P
